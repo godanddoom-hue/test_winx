@@ -1,0 +1,76 @@
+body {
+    background-image: url("/static/media/wallpapers/wallpaper.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'title_font';
+    src: url("/static/css/fonts/Preciosa.ttf") format('opentype');
+}
+
+.magic_title {
+    font-family: 'title_font';
+    font-weight: bold;
+    color: black;
+    font-size: 40px;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.magic_description {
+    font-family: 'title_font';
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.main_title {
+    font-family: 'title_font';
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+label {
+    font-family: 'title_font';
+    font-size: 40px;
+    margin-right: 0.25%;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.name_input {
+    padding: 12px 16px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 300px;
+
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    background-color: #ffffff;
+
+    color: #1e293b;
+    font-family: inherit;
+
+    transition: all 0.2s ease-in-out;
+
+    outline: none;
+
+    margin-right: 0.25%;
+}
+
+/** {*/
+/*    border: 1px solid black;*/
+/*}*/

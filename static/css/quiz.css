@@ -1,0 +1,55 @@
+body {
+    background-image: url("/static/media/wallpapers/quiz_wallpaper.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main_position_for_object {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.question {
+    margin-top: 5%;
+    font-weight: bold;
+    /*font-size: 400%;*/
+    font-size: 3vw;
+    color: black;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+/*img {*/
+/*    max-width: 100%;*/
+/*    height: auto;*/
+/*    !*width: 70%;*!*/
+/*    !*height: 80%;*!*/
+/*    margin-right: 90%;*/
+/*    margin-left: auto;*/
+/*    margin-top: 0;*/
+/*}*/
+
+.img_and_frame {
+    /*position: relative;*/
+    /*display: inline-block;*/
+    /*margin-left: 6%;*/
+    /*margin-top: 5%;*/
+}
+
+.quiz_image {
+    width: 700px;
+    height: 600px;
+    overflow: hidden;
+}
+
+/*.frame {*/
+/*    position: absolute;*/
+/*    z-index: 10;*/
+/*    width: 600px;*/
+/*    height: 500px;*/
+/*}*/

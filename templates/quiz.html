@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вопрос №{{ question_id }}</title>
+    <link rel="icon" href="{{ url_for('static', filename='media/logo.ico') }}">
+<!--    <link type="text/css" href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">-->
+    <link type="text/css" href="{{ url_for('static', filename='css/quiz.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ url_for('static', filename='css/button.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="main_position_for_object">
+    <div class="quiz_img_and_question">
+        <div class="img_and_frame">
+<!--            <img class="frame" src="static/media/frame.png">-->
+            <img class="quiz_image" src="static/media/question_pics/question_{{ question_id }}.png">
+        </div>
+        <div class="question">{{ question_text }}</div>
+    </div>
+    <dl>
+        {% for fairy_name, fairy_answer in fairy_dict.items() %}
+        <form action="/next_question" method="post">
+            <input type="hidden" name="fairy_name" value="{{ fairy_name }}">
+            <input type="hidden" name="question_id" value="{{ question_id + 1 }}">
+            <button class="answer_button" type="submit">{{ fairy_answer }}</button>
+        </form>
+        {% endfor %}
+    </dl>
+</div>
+</body>
+</html>

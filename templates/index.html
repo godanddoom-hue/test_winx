@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Какая ты фея Winx?</title>
+    <link rel="icon" href="{{ url_for('static', filename='media/logo.ico') }}">
+    <link type="text/css" href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ url_for('static', filename='css/button.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="main_title">
+    <h1>Тест: какая ты фея?</h1>
+</div>
+<div class="magic_title">
+    Здесь ты узнаешь, какая магия течет в тебе!
+</div>
+<div class="magic_description">
+    <p>Ответь на несколько вопросов и получи ответ какая ты фея из мультсериала "Winx"</p>
+    Если ты готова/готов нажми на кнопку!
+</div>
+<form action="/start_test" method="post">
+    <label>Введите ваше имя:</label>
+    <input type="text" class="name_input" name="user_name" placeholder="Даша...">
+    <input type="hidden" name="question_number" value="1">
+    <button type="submit" class="start_button">Начать тест</button>
+</form>
+</body>
+</html>
